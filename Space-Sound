@@ -1,2 +1,19 @@
-var audio = new Audio('audio_file.mp3');
-audio.play();
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song</title>
+</head>
+<body>
+    <audio id="song"
+        src="Space.mp3">
+    </audio>
+    <Script>
+        window.addEventListener('click',() => {
+            document.getElementById("song").play();
+        });
+    </Script>
+</body>
+</html>
